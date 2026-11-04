@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="no-referrer">
+<title>Aether beta privacy notice</title>
+<meta name="description" content="How The Gulag Lounge handles your data in the invite-only Aether Admin Beta.">
+<style>
+:root{--bg:#0b0a12;--panel:#14121f;--line:#2a2640;--fg:#ece9f6;--muted:#a9a3bf;--accent:#b69cff;--warn:#f2c46b}
+@media (prefers-color-scheme:light){:root{--bg:#f7f6fb;--panel:#fff;--line:#dcd8ea;--fg:#17142a;--muted:#55506b;--accent:#5b3fd6;--warn:#8a5a00}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:46rem;margin:0 auto;padding:2.5rem 1rem 4rem}
+.brand{font-size:.8rem;letter-spacing:.32em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-size:clamp(1.6rem,4.5vw,2.2rem);line-height:1.2;margin:.4rem 0 1.2rem}
+h2{font-size:1.2rem;margin:2.2rem 0 .6rem;padding-top:1rem;border-top:1px solid var(--line)}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.facts{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:1rem 1.2rem;margin:0 0 1rem}
+.facts dl{display:grid;grid-template-columns:max-content 1fr;gap:.35rem 1rem;margin:0}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0;overflow-wrap:anywhere}
+ul{padding-left:1.2rem}
+li{margin:.4rem 0}
+code{font-size:.92em;background:var(--panel);border:1px solid var(--line);border-radius:4px;padding:0 .3em}
+.table{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:.95rem}
+th,td{text-align:left;vertical-align:top;padding:.6rem .5rem;border-bottom:1px solid var(--line)}
+th{color:var(--muted);font-weight:600}
+.note{color:var(--muted)}
+.pending{color:var(--warn)}
+@media (max-width:30rem){.facts dl{grid-template-columns:1fr}.facts dt{margin-top:.4rem}}
+</style>
+</head>
+<body>
+<main>
+<div class="brand">Aether · The Gulag Lounge</div>
+<h1>Aether invite-only beta: privacy notice</h1>
+
+<section class="facts" aria-label="Key details">
+<dl>
+<dt>Data controller</dt><dd>Ashley JJ H, operating as The Gulag Lounge (“TGL”)</dd>
+<dt>Privacy contact</dt><dd><a href="mailto:thegulaglounge@hotmail.com">thegulaglounge@hotmail.com</a></dd>
+<dt>Effective date</dt><dd>4 November 2026</dd>
+</dl>
+</section>
+
+<h2>About this beta</h2>
+<p>Aether is a gaming and community desktop app made for The Gulag Lounge. This test is open only to people TGL has invited and confirmed are 18 or over. We do not ask for identity documents or dates of birth. If your Discord account has not been invited, sign-in is refused and no account is created. We keep no Discord ID for a refused attempt: only a sign-in attempt record, deleted about a day after it expires, and a security-log entry. Taking part does not give you administrative access to any TGL system.</p>
+
+<h2>What we process</h2>
+<p>When you sign in with Discord:</p>
+<ul>
+<li><strong>Your Discord user ID, username and display name.</strong> We request only Discord’s <code>identify</code> permission. TGL never receives your Discord email address, your messages, your server list or your password.</li>
+<li><strong>The invite list:</strong> the Discord IDs of invited testers, held on our server so that sign-in can be checked.</li>
+<li><strong>Your TGL member account number,</strong> and any role on it. Beta testers are ordinary members unless TGL separately grants a role.</li>
+<li><strong>Sign-in sessions.</strong> We store a one-way hash of your session token, never the token itself, plus the app you signed in from and when the session started, was last used and expires. The Aether desktop app holds your session in memory only, so you sign in again each time you restart it.</li>
+<li><strong>A security log</strong> of account events, such as sign-in, refused sign-in, sign-out, suspension, reports, moderation and erasure. Each entry holds your internal account number, the event and its time, related technical identifiers (session, sign-in attempt, message, channel and request numbers) and any reason a moderator or the owner entered. It does not hold your Discord ID, username or message text. A refused (uninvited) sign-in records no Discord ID.</li>
+<li><strong>Your IP address,</strong> held briefly in memory to limit repeated requests. We keep no routine access logs. If our web proxy hits an error while handling your request, its error log can record your IP address and the request details.</li>
+</ul>
+<p>Aether also shows public TGL community figures (member and online counts) and game-server status. These are not linked to you.</p>
+
+<h2>Community chat: what we process</h2>
+<p>When you use Community in Aether:</p>
+<ul>
+<li><strong>Messages</strong> in channels, private conversations and group conversations: the text, when it was sent, any message you replied to, and whether it was edited or removed. We keep no earlier versions of an edited message. Removing a message overwrites its text at once and deletes its reactions; a “removed” marker with its author and time stays until the message reaches 90 days.</li>
+<li><strong>Mentions</strong> (<code>@name</code>) are part of the message text and are used to notify the person mentioned.</li>
+<li><strong>Private and group conversations:</strong> who is in each one, any group title, whether you muted it, and how far you have read.</li>
+<li><strong>Chat timeouts:</strong> if the owner pauses your chat, the reason and end time.</li>
+<li><strong>Reactions</strong> you add, how far you have read in each channel, and any <strong>blocks</strong> you set.</li>
+<li><strong>Presence:</strong> we store your chosen setting (online, away, do not disturb or invisible). Whether you are connected right now is held only in memory. Game activity is shown only if you switch on “Show what I’m doing”, never while you are invisible, and is held only in memory.</li>
+<li><strong>Typing indicators and notifications</strong> are passed on live and are not stored in our database.</li>
+<li><strong>Reports</strong> you make: the message, the reason, any note you add, and when.</li>
+</ul>
+
+<h2>Who can see Community messages</h2>
+<ul>
+<li><strong>Channel messages:</strong> members allowed to read that channel.</li>
+<li><strong>Private and group messages:</strong> the people in that conversation, who see everything posted in it.</li>
+<li><strong>Moderation:</strong> during this beta, only the TGL owner moderates. Moderation does not include browsing private or group conversations. If a participant reports a message, that one message is shared for moderation, and access to reports is recorded.</li>
+<li><strong>Not end-to-end encrypted:</strong> messages are protected in transit (HTTPS), but they are stored on servers TGL controls. They are therefore technically accessible to the TGL owner who runs those servers, and could be disclosed if the law requires it. The owner does not read private messages except to handle a report or where the law requires it.</li>
+<li><strong>No other readers:</strong> no AI assistant, analytics service, chatbot, Discord bridge or other outside tool reads Community messages.</li>
+</ul>
+
+<h2>Why we use it, and our lawful basis</h2>
+<p>We use this information to let invited testers sign in and talk to each other, deliver messages and notifications, show who is around, keep accounts and sessions secure, apply the right permissions, handle reports, stop unauthorised use, and investigate problems with the beta.</p>
+<p>Our lawful basis is <strong>legitimate interests</strong> (UK GDPR Article 6(1)(f)): running and securing an invited test of our community app. We have balanced this against your interests: the data is minimal, you choose to join, and you can leave or ask for erasure at any time.</p>
+
+<h2>Where it is processed</h2>
+<ul>
+<li>The TGL backend runs on a server we rent from Hostinger, located in Manchester, United Kingdom. TGL alone administers the data on it.</li>
+<li>Sign-in uses Discord, a provider based in the United States. When you sign in, you share your details with TGL through Discord under <a href="https://discord.com/privacy">Discord’s own privacy policy</a>. TGL does not send your data to Discord or to anyone else.</li>
+<li>Apart from Hostinger’s hosting, we use no other service providers for your account data, and we do not sell it or use it for advertising.</li>
+<li>This notice and Aether’s update files are hosted on GitHub Pages, run by GitHub, Inc. in the United States. GitHub may record the IP address of anyone who views these pages, for its own security, under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>. TGL receives none of that information. No account data is stored there.</li>
+</ul>
+
+<h2>How long we keep it</h2>
+<div class="table">
+<table>
+<thead><tr><th scope="col">Data</th><th scope="col">How long</th></tr></thead>
+<tbody>
+<tr><td>Sessions</td><td>End after 7 days without use, 30 days at most, or at once when you sign out. The record is deleted 30 days after the session ends</td></tr>
+<tr><td>Your account (Discord ID, username, display name, roles)</td><td>Until you ask us to erase it. When the beta ends we reconsider retention, record the decision and update this notice</td></tr>
+<tr><td>Channel, private and group messages</td><td>90 days from when each message was first sent, then deleted by an automatic job that runs every 15 minutes, normally within the hour. Editing does not restart the clock</td></tr>
+<tr><td>A message under an open report</td><td>Until the report is resolved, and never more than 30 days beyond its 90 days</td></tr>
+<tr><td>Reactions and reports on a message</td><td>Deleted with the message; resolved reports at the latest 90 days after resolution</td></tr>
+<tr><td>Private conversations</td><td>Deleted once they are older than 90 days and hold no messages</td></tr>
+<tr><td>Presence setting, blocks, read positions</td><td>Until you change them, or your account is erased</td></tr>
+<tr><td>Chat timeouts</td><td>Until about a day after the timeout ends</td></tr>
+<tr><td>Invite list entry</td><td>While you have access. Removed by hand when your access ends or your account is erased</td></tr>
+<tr><td>Live presence, activity, typing, notifications</td><td>Memory only, in Aether and on our server. Server memory clears shortly after you disconnect or when the service restarts</td></tr><tr><td>Group titles</td><td>Until the conversation is deleted</td></tr>
+<tr><td>Backups</td><td>Daily encrypted database backups, deleted about 14 days after they are made. Something removed or expired can remain in a backup for about 14 more days. Backups are never published and are restored only to recover the service</td></tr>
+<tr><td>IP address</td><td>In memory, for rate limiting. In the proxy’s error log only if an error occurs (see below)</td></tr>
+<tr><td>Server logs</td><td>Fixed-size files that are overwritten as they fill (at most 30 MB per service), so there is no fixed time limit, and they are removed when that service is replaced. API logs hold the request type, path (which can include internal account, message or conversation numbers), status and time. Proxy error logs can also hold an IP address. Only the TGL owner can read them</td></tr>
+<tr><td>Tester confirmation record</td><td>Your Discord ID, that you confirmed you are 18 or over, and when. Kept privately by the TGL owner while you have access and for 90 days after, then deleted</td></tr>
+<tr><td>Security log</td><td>Kept for the duration of the beta. We review the need for it at least every three months; the first review is due by 3 February 2027. When the beta ends, we will reconsider retention and record the decision, and we will update this notice before keeping it any longer</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>Your rights and erasure</h2>
+<p>You can ask to access, correct or erase your data, or object to its use, by emailing <a href="mailto:thegulaglounge@hotmail.com">thegulaglounge@hotmail.com</a>. We reply within one month.</p>
+<p>Erasure is carried out by hand by the TGL owner, using TGL’s administrative tools. It removes your account, your linked Discord identity, your sessions, any sign-in attempts in progress, any roles, every message you wrote, your reactions, your conversation memberships, your blocks, your presence setting and the reports you made. Messages other people sent stay in their conversations. We also remove your invite-list entry. To end your access quickly, we can suspend your account: new requests are refused at once and any live connection closes within about a minute.</p>
+<p><strong>After erasure, some records remain, and we treat them as personal data.</strong> Security-log entries stay, with your former account number and their technical identifiers. They are pseudonymous, not anonymous: they could still be linked to you, for example through a backup that has not yet expired, the private tester records below, or what someone remembers. Only the TGL owner can read the security log. It cannot be edited or partly deleted, because that protects its integrity against tampering, so we keep it for the security of the service for the period above. You can still object or ask us about these records using the address above. Copies of your account also remain in backups for up to 14 days. Other people’s messages that mention you, and the record of a direct conversation with you, stay until those messages reach 90 days.</p>
+<p>Data is stored and processed in the UK. If you live elsewhere, local laws may give you further rights; contact us at the address above.</p>
+<p>You can complain to the Information Commissioner’s Office: <a href="https://ico.org.uk/">ico.org.uk</a>.</p>
+
+<h2>Beta limitations</h2>
+<p>Aether is pre-release software. Some features may be unavailable, show demonstration data, or change during testing. We will review this notice before widening the beta or adding moderators, attachments, or account, payment or media features.</p>
+
+<p class="note">Contact: <a href="mailto:thegulaglounge@hotmail.com">thegulaglounge@hotmail.com</a></p>
+</main>
+</body>
+</html>
