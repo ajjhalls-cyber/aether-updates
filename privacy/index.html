@@ -42,7 +42,7 @@ th{color:var(--muted);font-weight:600}
 <dl>
 <dt>Data controller</dt><dd>Ashley JJ H, operating as The Gulag Lounge (“TGL”)</dd>
 <dt>Privacy contact</dt><dd><a href="mailto:thegulaglounge@hotmail.com">thegulaglounge@hotmail.com</a></dd>
-<dt>Effective date</dt><dd>4 November 2026</dd>
+<dt>Effective date</dt><dd>5 November 2026</dd>
 </dl>
 </section>
 
@@ -55,7 +55,7 @@ th{color:var(--muted);font-weight:600}
 <li><strong>Your Discord user ID, username and display name.</strong> We request only Discord’s <code>identify</code> permission. TGL never receives your Discord email address, your messages, your server list or your password.</li>
 <li><strong>The invite list:</strong> the Discord IDs of invited testers, held on our server so that sign-in can be checked.</li>
 <li><strong>Your TGL member account number,</strong> and any role on it. Beta testers are ordinary members unless TGL separately grants a role.</li>
-<li><strong>Sign-in sessions.</strong> We store a one-way hash of your session token, never the token itself, plus the app you signed in from and when the session started, was last used and expires. The Aether desktop app holds your session in memory only, so you sign in again each time you restart it.</li>
+<li><strong>Sign-in sessions.</strong> We store a one-way hash of your session token, never the token itself, plus the app you signed in from and when the session started, was last used and expires. The Aether desktop app keeps your session token in Windows Credential Manager, protected for your Windows account, so you stay signed in after restarting. It is removed when you sign out or when our server refuses it because the session has ended. If Aether cannot remove it, it tells you, and you can delete it in Credential Manager. Uninstalling Aether does not remove it; sign out first, or delete it in Credential Manager. To delete it yourself, open Credential Manager in Windows, choose Windows Credentials and remove the entry named gg.thegulaglounge.nexus/platform-session.</li>
 <li><strong>A security log</strong> of account events, such as sign-in, refused sign-in, sign-out, suspension, reports, moderation and erasure. Each entry holds your internal account number, the event and its time, related technical identifiers (session, sign-in attempt, message, channel and request numbers) and any reason a moderator or the owner entered. It does not hold your Discord ID, username or message text. A refused (uninvited) sign-in records no Discord ID.</li>
 <li><strong>Your IP address,</strong> held briefly in memory to limit repeated requests. We keep no routine access logs. If our web proxy hits an error while handling your request, its error log can record your IP address and the request details.</li>
 </ul>
